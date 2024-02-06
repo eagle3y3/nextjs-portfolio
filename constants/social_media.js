@@ -12,11 +12,5 @@ export const SOCIAL_MEDIA = [
 		icon: <BsGithub />,
 		title: "Visit Github profile",
 		url: "https://github.com/eagle3y3"
-	},
-	{
-		id: "mail",
-		icon: <BsFillEnvelopeOpenFill />,
-		title: "Send me an email",
-		url: "mailto://hairston.lester@gmail.com"
 	}
 ];

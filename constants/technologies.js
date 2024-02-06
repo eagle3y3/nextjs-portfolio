@@ -4,8 +4,6 @@ import { IoLogoJavascript } from "react-icons/io";
 import { FaReact, FaWordpressSimple, FaFigma, FaTrello } from "react-icons/fa";
 import { BsBootstrap } from "react-icons/bs";
 import { TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
-import { RiFlutterFill } from "react-icons/ri";
-import AdobeXDIcon from "public/assets/svg/adobexd.svg";
 import ZeplinIcon from "public/assets/svg/zeplin.svg";
 import WebstormIcon from "public/assets/svg/webstorm.svg";
 import JiraIcon from "public/assets/svg/jira.svg";

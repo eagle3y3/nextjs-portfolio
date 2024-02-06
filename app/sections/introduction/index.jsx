@@ -3,10 +3,8 @@
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
-import { WelcomeAnimation } from "./IntroAnimation";
 import { useScrollTo } from "hooks";
 import { useMediaQuery } from "utils";
-import Grid from "./Grid";
 import LightningBolt from "./Grid";
 
 export function WelcomeSection() {
@@ -121,6 +119,19 @@ export function WelcomeSection() {
 							>
 								See my latest projects
 							</Link>
+						</div>
+						<div className="mt-5 relative flex flex-col overflow-hidden">
+							<p
+								ref={ref}
+								className="text-[17px] md:text-2xl transform-none opacity-100"
+								style={{
+									transform: isInView ? "none" : "translateX(-200px)",
+									opacity: isInView ? 1 : 0,
+									transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+								}}
+							>
+								Email: <mark>hairston.lester@gmail.com</mark>
+							</p>
 						</div>
 					</div>
 
