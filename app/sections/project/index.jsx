@@ -17,7 +17,7 @@ export function ProjectsSection() {
 
 	const { data, error } = useSWR(url, fetcher);
 	const projects = data?.result;
-
+	console.log(projects);
 	if (error && !data) {
 		return null;
 	}
@@ -40,7 +40,7 @@ export function ProjectsSection() {
 							<Projects projects={projects} />
 						</ErrorBoundary>
 					</Suspense>
-
+					{/*
 					<Link
 						href={SITE_ROUTES.projects}
 						tabIndex={-1}
@@ -54,7 +54,7 @@ export function ProjectsSection() {
 						}}
 					>
 						<button aria-label="See more projects">More projects</button>
-					</Link>
+					</Link>*/}
 				</div>
 			</section>
 		</LazyMotion>

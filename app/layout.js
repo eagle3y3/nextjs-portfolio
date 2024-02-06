@@ -5,6 +5,9 @@ import "styles/globals.css";
 import { ThemeContext } from "context";
 
 export const metadata = { ...AppMetadata };
+export const viewport = {
+	themeColor: "black"
+};
 
 export default function RootLayout({ children }) {
 	return (

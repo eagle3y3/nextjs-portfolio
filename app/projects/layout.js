@@ -14,7 +14,6 @@ const url = `${process.env.NEXT_PUBLIC_SANITY_URL}${process.env.NEXT_PUBLIC_SANI
 export default function Page() {
 	const [category, setCategory] = useState(undefined);
 	const filterUrl = `${process.env.NEXT_PUBLIC_SANITY_URL}${process.env.NEXT_PUBLIC_SANITY_PROJECTS}${category}${process.env.NEXT_PUBLIC_SANITY_PROJECT_BY_CATEGORY}`;
-
 	const fetchUrl = category ? filterUrl : url;
 	const { data, error } = useSWR(fetchUrl, fetcher);
 	const filteredProjects = data?.result;

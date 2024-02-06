@@ -13,12 +13,11 @@ import HeadlessUiIcon from "public/assets/svg/headlessui.svg";
 import MuiIcon from "public/assets/svg/mui.svg";
 import ChakraIcon from "public/assets/svg/chakraui.svg";
 import StyledIcon from "public/assets/svg/styledcomponents.svg";
+import ShopifyIcon from "public/assets/svg/shopify.svg";
+import NodeJSIcon from "public/assets/svg/nodejs.svg";
+import PythonIcon from "public/assets/svg/python.svg";
 
 export const TECHNOLOGIES = [
-	{
-		category: "Mobile",
-		items: [{ name: "Flutter", icon: <RiFlutterFill size={32} /> }]
-	},
 	{
 		category: "Front-end",
 		items: [
@@ -37,11 +36,17 @@ export const TECHNOLOGIES = [
 		]
 	},
 	{
+		category: "Backend",
+		items: [
+			{ name: "NodeJS", icon: <NodeJSIcon width={36} /> },
+			{ name: "Python", icon: <PythonIcon width={32} /> }
+		]
+	},
+	{
 		category: "UI tools",
 		items: [
 			{ name: "Figma", icon: <FaFigma size={32} /> },
-			{ name: "Zeplin", icon: <ZeplinIcon width={36} /> },
-			{ name: "XD", icon: <AdobeXDIcon width={32} /> }
+			{ name: "Zeplin", icon: <ZeplinIcon width={36} /> }
 		]
 	},
 	{
@@ -53,6 +58,7 @@ export const TECHNOLOGIES = [
 			{ name: "Github", icon: <AiFillGithub size={32} /> },
 			{ name: "Gitlab", icon: <AiFillGitlab size={32} /> },
 			{ name: "VsCode", icon: <DiVisualstudio size={32} /> },
+			{ name: "Shoipify", icon: <ShopifyIcon size={32} /> },
 			{ name: "WebStorm", icon: <WebstormIcon width={32} /> }
 		]
 	}

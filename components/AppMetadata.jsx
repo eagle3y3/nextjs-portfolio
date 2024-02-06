@@ -1,6 +1,6 @@
-const author = "Vasile Novatchii";
+const author = "Lester Hairston";
 const description =
-	"Software developer from Moldova, Republic of, who loves to develop beautiful websites, single page applications, customer relationship management or code from scratch using React and Next.js";
+	"Software developer from Houston, Texas of, who loves to develop beautiful websites, single page applications, customer relationship management or code from scratch using React and Next.js";
 const url = "https://vasile-novatchii.netlify.app";
 export const AppMetadata = {
 	metadataBase: new URL("https://vasile-novatchii.netlify.app/"),
@@ -13,16 +13,16 @@ export const AppMetadata = {
 		icon: "/favicon.png"
 	},
 	keywords: [
-		"Vasile Novatchii",
-		"Vasile Novatchii - software developer",
+		"Lester Hairston",
+		"Lester Hairston - software developer",
 		"Frontend developer",
-		"Flutter developer",
+		"Fullstack developer",
 		"Portfolio website",
 		"Frontend Developer Portfolio"
 	],
 	creator: author,
 	authors: [{ name: author, url: url }],
-	colorScheme: "dark",
+
 	openGraph: {
 		title: `${author} | Portfolio`,
 		description: description,

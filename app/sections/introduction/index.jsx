@@ -6,6 +6,8 @@ import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { WelcomeAnimation } from "./IntroAnimation";
 import { useScrollTo } from "hooks";
 import { useMediaQuery } from "utils";
+import Grid from "./Grid";
+import LightningBolt from "./Grid";
 
 export function WelcomeSection() {
 	const ref = useRef(null);
@@ -16,10 +18,10 @@ export function WelcomeSection() {
 
 	let [count, setCount] = useState(0);
 	const [text] = useState([
-		"build Flutter apps for Android/iOS",
 		"convert design into modern UI",
 		"build interactive UI using React",
-		"develop websites using Next.js"
+		"develop websites using Next.js",
+		"integrate apps with AI"
 	]);
 
 	const onClick = (e) => scrollToEl(e);
@@ -52,7 +54,7 @@ export function WelcomeSection() {
 							}}
 						>
 							<p>
-								Hi, I&apos;m <mark>Vasile</mark> a <mark>passionate</mark> software developer.
+								Hi, I&apos;m <mark>Lester</mark> a <mark>passionate</mark> software developer.
 							</p>
 						</h1>
 
@@ -122,7 +124,7 @@ export function WelcomeSection() {
 						</div>
 					</div>
 
-					{isTabletUp && <WelcomeAnimation />}
+					{isTabletUp && <LightningBolt />}
 				</div>
 			</section>
 		</LazyMotion>
